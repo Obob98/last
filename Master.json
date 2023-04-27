@@ -1,0 +1,51 @@
+{
+    "IzeyDB": [{
+            "id": "metadata",
+            "connection": [{
+                    "id": "host",
+                    "host": "localhost"
+                },
+                {
+                    "port": 5500
+                }
+            ],
+            "databases": [{
+                    "name": "admin",
+                    "collections": []
+                },
+                {
+                    "name": "config",
+                    "collections": []
+                },
+                {
+                    "name": "local",
+                    "collections": ["start_log"]
+                }
+            ],
+            "important": ["admin", "config", "local"]
+        },
+        {
+            "name": "admin",
+            "collections": []
+        },
+        {
+            "name": "config",
+            "collections": []
+        },
+        {
+            "name": "local",
+            "collections": [{
+                "id": 2,
+                "data": [{ "name": "startup_log" }, { "hostname": "Le-Brunc" }, { "startTimeLocal": "Fri Aug 12 12:20:38.880" }, { "buildinfo": { "version": "1.0.0" } }, { "javascriptEngine": "mozjs" }]
+            }]
+        }, {
+            "name": "testDB",
+            "collections": [{
+                "name": "testcollection",
+                "data": [{ "name": "john", "age": 54 }, { "hobbies": ["soccer", "movies"] },
+                    { "name": "maria", "age": 31 }, { "hobbies": ["movies", "tennis", "cooking"] }
+                ]
+            }]
+        }
+    ]
+}
